@@ -1,0 +1,5 @@
+<launch>
+    <node pkg ="talklisten" type="persontalk" name = "persontalker" output="screen"/>
+    <node pkg ="talklisten" type="personlisten" name = "personlistener" output="screen"/>
+    <!-- <node pkg ="talklisten" type="personlistentwo" name = "personlistenertwo" output="screen"/> -->
+</launch>

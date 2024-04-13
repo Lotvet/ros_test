@@ -1,0 +1,6 @@
+<launch>
+    <!-- <node pkg="tfstest" type ="static_pub" name = "static_pube" output ="screen" /> -->
+    <node pkg="tfstest" type ="dynamic_pub" name = "dynamic_pube" output ="screen" />
+    <node pkg="tfstest" type ="static_sub" name = "static_sube" output ="screen" />
+    <include file="$(find helloworld)/launch/helloworld_start.launch"/>
+</launch>

@@ -1,0 +1,16 @@
+<robot name="myxacrocar1" xmlns:xacro = "http://www.ros.org/wiki/xacro" >
+    <xacro:property name="one" value="1" />
+    <xacro:property name="two" value="2" />
+    
+    <xacrouse name="${one}" />
+    <xacrouse name="${one}" />
+    
+    <xacrousebyY result="${one / 2}" />
+    <xacrousebyY result="${two * two  + one} + ${one / 2}" />
+
+    <xacro:macro name="getsum" params="numone numtwo three four">
+        <result value="${one + two + three + four}"/>
+    </xacro:macro>
+    
+    <xacro:getsum numone="${one}" numtwo="${two}" three="3" four="4" />
+</robot>

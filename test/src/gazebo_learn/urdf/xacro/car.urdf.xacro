@@ -1,0 +1,18 @@
+<robot name="mycar" xmlns:xacro="http://www.ros.org/wiki/xacro">
+    <!-- include intertial -->
+    <xacro:include filename="temple.urdf.xacro" />
+
+    <xacro:include filename="car_base_link.urdf.xacro"/>
+    <xacro:include filename="car_camera.urdf.xacro"/>
+    <xacro:include filename="car_laser.urdf.xacro"/>
+
+    <!-- include gazebo -->
+    <xacro:include filename="../gazebo/car_gazebo.xacro" />
+    <!-- include laser -->
+    <xacro:include filename="../gazebo/car_laser.xacro" />
+    <!-- include camera -->
+    <xacro:include filename="../gazebo/car_camera.xacro" />
+    <!-- include kinect -->
+    <xacro:include filename="../gazebo/car_kinect.xacro" />
+
+</robot>

@@ -1,0 +1,6 @@
+<!-- the start node of turtle -->
+<launch>
+    <node pkg="turtlesim" type="turtlesim_node" name="turtlenode" output="screen"/>
+    <node pkg="turtle_control" type="turtlecontrolsub" name="turtlecontrolsub" output="screen"/>
+    <node pkg="turtle_control" type="turtlecontrolpub" name="turtlecontrolpub" output="screen"/>
+</launch>

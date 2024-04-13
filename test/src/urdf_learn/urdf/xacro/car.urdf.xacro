@@ -1,0 +1,5 @@
+<robot name="mycar" xmlns:xacro="http://www.ros.org/wiki/xacro">
+    <xacro:include filename="car_base_link.urdf.xacro"/>
+    <xacro:include filename="car_camera.urdf.xacro"/>
+    <xacro:include filename="car_laser.urdf.xacro"/>
+</robot>

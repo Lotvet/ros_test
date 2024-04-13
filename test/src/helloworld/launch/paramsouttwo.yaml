@@ -1,0 +1,28 @@
+bg_R: 100
+paramone: 100
+rosdistro: 'noetic
+
+  '
+roslaunch:
+  uris:
+    host_hmxroot_virtual_machine__33161: http://hmxroot-virtual-machine:33161/
+    host_hmxroot_virtual_machine__34243: http://hmxroot-virtual-machine:34243/
+    host_hmxroot_virtual_machine__36009: http://hmxroot-virtual-machine:36009/
+    host_hmxroot_virtual_machine__37997: http://hmxroot-virtual-machine:37997/
+    host_hmxroot_virtual_machine__38809: http://hmxroot-virtual-machine:38809/
+    host_hmxroot_virtual_machine__42179: http://hmxroot-virtual-machine:42179/
+    host_hmxroot_virtual_machine__42209: http://hmxroot-virtual-machine:42209/
+rosversion: '1.16.0
+
+  '
+run_id: fa8f0052-dc42-11ee-a450-a5b726aeaadd
+thisparam:
+  paramthree: 10555
+turtle_GUI:
+  background_b: 255
+  background_g: 86
+  background_r: 69
+  bg_B: 255
+  bg_G: 30
+  bg_R: 100
+  paramtwo: 111

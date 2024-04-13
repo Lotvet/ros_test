@@ -1,0 +1,4 @@
+<launch>
+    <node pkg = "serverclient" type = "server" name = "serverlaunch" output ="screen"/>
+    <node pkg = "serverclient" type = "client" name = "clientlaunch" output ="screen"/>
+</launch>

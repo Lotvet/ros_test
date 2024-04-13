@@ -1,0 +1,5 @@
+<launch>
+    <rosparam command="delete" param="bg_G" />
+    <rosparam command="dump" file="$(find helloworld)/launch/paramsouttwo.yaml"/>
+    <rosparam command="delete" param="bg_B" />
+</launch>

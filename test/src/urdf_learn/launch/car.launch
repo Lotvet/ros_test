@@ -1,0 +1,19 @@
+<launch>
+    <!-- set the parameter robot_description -->
+    <param name="robot_description" command="$(find xacro)/xacro $(find urdf_learn)/urdf/xacro/car.urdf.xacro" />
+    <!-- start rviz visualization -->
+    <node pkg="rviz" type="rviz" name ="rviz" args="-d $(find urdf_learn)/config/show_mycar.rviz" />
+
+    <!-- 添加关节状态发布节点 -->
+    <node pkg="joint_state_publisher" type="joint_state_publisher" name="joint_state_publisher" />
+    <!-- 添加机器人状态发布节点 -->
+    <node pkg="robot_state_publisher" type="robot_state_publisher" name="robot_state_publisher" />
+    <!-- 可选:用于控制关节运动的节点 -->
+    <node pkg="joint_state_publisher_gui" type="joint_state_publisher_gui" name="joint_state_publisher_gui" />
+
+    <!-- <node name="arbotix" pkg="arbotix_python" type="arbotix_driver" output="screen">
+       <rosparam file="$(find urdf_learn)/config/control.yaml" command="load" />
+       <param name="sim" value="true" />
+    </node> -->
+
+</launch>

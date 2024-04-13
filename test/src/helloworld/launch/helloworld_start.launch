@@ -1,0 +1,15 @@
+<launch>
+    <!-- <node pkg="turtlesim" type="turtlesim_node" name="turtle_GUI" respawn="true" respawn_delay="3" required="true" />  -->
+    <param name="paramone" type="int" value="100" />
+    <param name="thisparam/paramthree" type="int" value="10555" />
+    <rosparam command="load" file="$(find helloworld)/launch/params.yaml"/>
+    <node pkg="turtlesim" type="turtlesim_node" name="turtle_GUI" required="true" >
+        <remap from="/turtle1/cmd_vel" to="/cmd_vel" />
+        <param name="paramtwo" type="int" value="111" />
+            
+        <!-- <rosparam command="dump" file="$(find helloworld)/launch/paramsout.yaml"/> -->
+    </node> 
+    <node pkg="teleop_twist_keyboard" type="teleop_twist_keyboard.py" name="keyboard" />
+    <!-- <node pkg="turtlesim" type="turtle_teleop_key" name="turtle_key"/> -->
+    <!-- <node pkg="helloworld" type="helloworld_cpp" name="testhellow"/> -->
+</launch>

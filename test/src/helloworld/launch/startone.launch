@@ -1,0 +1,7 @@
+<launch>
+
+    <node pkg="helloworld" type="targetname" name="targetna" output = "screen"/>
+    <!-- <node pkg="testone" type="testone" name="testonestart"/> -->
+    <node pkg="testone" type="testone" name="testonestart" output="screen" />
+    <include file="$(find helloworld)/launch/helloworld_start.launch" />
+</launch>

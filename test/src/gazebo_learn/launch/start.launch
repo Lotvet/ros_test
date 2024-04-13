@@ -1,0 +1,8 @@
+<launch>
+    <include file="$(find gazebo_learn)/launch/gazebo_start.launch"/>
+    <include file="$(find gazebo_learn)/launch/navgation_start.launch"/>
+    <include file="$(find gazebo_learn)/launch/path.launch"/>
+    
+    <!-- <include file="$(find gazebo_learn)/launch/map_save.launch"/> -->
+
+</launch>

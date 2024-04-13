@@ -1,0 +1,8 @@
+prefix=/home/hmxroot/Documents/ros/test/devel
+
+Name: testone
+Description: Description of testone
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

@@ -1,0 +1,4 @@
+<launch>
+    <node pkg="talklisten" type="pubtalk" name="talker" output="screen"/>
+    <node pkg="talklisten" type="publisten" name="listener" output="screen"/>
+</launch>

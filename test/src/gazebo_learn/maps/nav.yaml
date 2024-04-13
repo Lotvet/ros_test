@@ -1,0 +1,17 @@
+image: /home/hmxroot/Documents/ros/test/src/gazebo_learn/maps/nav.pgm
+
+resolution: 0.050000
+# the origin of map ,and the parameter are x , y , map
+origin: [-50.000000, -50.000000, 0.000000]
+# 取反
+negate: 0
+
+# 判断是否是障碍物规则
+# 地图上的每一个像素取值【0~255】
+# 根据像素值计算比例p=(255-x)/255 白色0 黑色1 灰色介于0到1的值
+# 判断是否是障碍物 p?>occupied_thresh就是障碍物 p<free_thresh 就是无物可以自由通行
+
+# 占用阈值 
+occupied_thresh: 0.65
+# 空闲阈值
+free_thresh: 0.196

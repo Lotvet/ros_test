@@ -1,0 +1,74 @@
+<robot name="mycar" xmlns:xacro="http://www.ros.org/wiki/xacro">
+    <xacro:property name="base_footprint_radius" value="0.001" /> 
+    <link name="base_footprint">
+        <visual>
+            <geometry>
+                <sphere radius="${base_footprint_radius}"/>
+            </geometry>
+        </visual>
+    </link>
+    <link name="base_link">
+        <visual>
+            <geometry>
+                <cylinder radius="0.1" length="0.08"/>
+            </geometry>
+            <origin xyz="0 0 0" rpy="0 0 0" />
+            <material name="redcolor">
+                <color rgba="1 0 0 0.5" />
+            </material>
+        </visual>
+    </link>
+
+    <joint name="linkTofootprint" type="fixed">
+        <parent link="base_footprint" />
+        <child link="base_link" />
+        <origin xyz="0 0 0.055" rpy="0 0 0" />
+        <axis xyz="0 0 0" />
+    </joint>
+
+        <!-- 添加驱动轮 -->
+    <xacro:macro name="driving_wheel" params="wheelname wheel_y">
+        <link name="${wheelname}_wheel">
+            <visual>
+                <geometry>
+                    <cylinder radius="0.0325" length="0.015"/>
+                </geometry>
+                <origin xyz="0 0 0" rpy="1.57 0 0"/>
+                <material name="black">
+                    <color rgba="0 0 0 1" />
+                </material>
+            </visual>
+        </link>
+
+        <joint name="${wheelname}2base_link" type="continuous">
+            <parent link="base_link"/>
+            <child link="${wheelname}_wheel" />
+            <origin xyz="0 ${wheel_y} -0.0225" />
+            <axis xyz="0 1 0" />
+        </joint>
+    </xacro:macro>
+        <!-- 添加万向轮(支撑轮)  -->
+    <xacro:macro name="use_wheel" params="wheelname wheel_x">
+        <link name="${wheelname}_wheel">
+            <visual>
+                <geometry>
+                    <sphere radius="0.0075"/>
+                </geometry>
+                <material name="black">
+                    <color rgba="0 0 0 1"/>
+                </material>
+            </visual>
+        </link>
+        <joint name="${wheelname}_wheel2base_link" type="continuous">
+            <parent link="base_link" />
+            <child link="${wheelname}_wheel" />
+            <origin xyz="${wheel_x} 0 -0.0475" rpy="0 0 0" />
+        </joint>
+    </xacro:macro>
+
+
+    <xacro:driving_wheel wheelname="right_wheel" wheel_y="0.1" />
+    <xacro:driving_wheel wheelname="left_wheel" wheel_y="-0.1"/>
+    <xacro:use_wheel wheelname="front" wheel_x="0.0925"/>
+    <xacro:use_wheel wheelname="back" wheel_x="-0.0925"/>
+</robot>

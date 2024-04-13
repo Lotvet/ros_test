@@ -1,0 +1,8 @@
+prefix=/home/hmxroot/Documents/ros/test/install
+
+Name: rosbag_learn
+Description: Description of rosbag_learn
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

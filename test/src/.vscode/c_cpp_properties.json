@@ -1,0 +1,29 @@
+{
+  "configurations": [
+    {
+      "browse": {
+        "databaseFilename": "${default}",
+        "limitSymbolsToIncludedHeaders": false
+      },
+      "includePath": [
+        "/home/hmxroot/Documents/ros/test/devel/include/**",
+        "/opt/ros/noetic/include/**",
+        "/home/hmxroot/Documents/ros/test/src/apis/include/**",
+        "/home/hmxroot/Documents/ros/test/src/helloworld/include/**",
+        "/home/hmxroot/Documents/ros/test/src/params/include/**",
+        "/home/hmxroot/Documents/ros/test/src/serverclient/include/**",
+        "/home/hmxroot/Documents/ros/test/src/talklisten/include/**",
+        "/home/hmxroot/Documents/ros/test/src/testone/include/**",
+        "/home/hmxroot/Documents/ros/test/src/tfstest/include/**",
+        "/home/hmxroot/Documents/ros/test/src/turtle_control/include/**",
+        "/usr/include/**"
+      ],
+      "name": "ROS",
+      "intelliSenseMode": "gcc-x64",
+      "compilerPath": "/usr/bin/gcc",
+      "cStandard": "gnu11",
+      "cppStandard": "c++14"
+    }
+  ],
+  "version": 4
+}
