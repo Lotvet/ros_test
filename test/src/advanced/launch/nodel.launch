@@ -1,0 +1,14 @@
+<launch>
+    <!-- 设置nodelet管理器 -->
+    <node pkg="nodelet" type="nodelet" name="boss_one" args="manager" output="screen" />
+    <!-- 启动节点1，名称为 n1, 参数 /n1/value 为100 -->
+    <node pkg="nodelet" type="nodelet" name="employ_one" args="load advanced/myplus_nodelet boss_one" output="screen" >
+        <param name="value" value="1024" />
+    </node>
+    <!-- 启动节点2，名称为 n2, 参数 /n2/value 为-50 -->
+    <node pkg="nodelet" type="nodelet" name="employ_two" args="load advanced/myplus_nodelet boss_one" output="screen" >
+        <param name="value" value="-3" />
+        <remap from="/employ_two/in" to="/employ_one/out" />
+    </node>
+
+</launch>

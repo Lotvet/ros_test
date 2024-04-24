@@ -1,23 +1,23 @@
 {
-  "configurations": [
-    {
-      "browse": {
-        "databaseFilename": "${default}",
-        "limitSymbolsToIncludedHeaders": false
-      },
-      "includePath": [
-        "/opt/ros/noetic/include/**",
-        "/home/hmxroot/Documents/ros/test/src/helloworld/include/**",
-        "/usr/include/**",
-        "/home/hmxroot/Documents/ros/test/devel/include/**",
-        "/home/hmxroot/Documents/ros/test/src/helloworld/include/**"
-      ],
-      "name": "ROS",
-      "intelliSenseMode": "gcc-x64",
-      "compilerPath": "/usr/bin/gcc",
-      "cStandard": "gnu11",
-      "cppStandard": "c++17"
-    }
-  ],
-  "version": 4
+    "configurations": [
+        {
+            "browse": {
+                "databaseFilename": "${default}",
+                "limitSymbolsToIncludedHeaders": false
+            },
+            "includePath": [
+                "/opt/ros/noetic/include/**",
+                "/usr/include/**",
+                "/home/hmxroot/Documents/ros/test/devel/include/**",
+                "/home/hmxroot/Documents/ros/test/src/helloworld/include/**",
+                "/home/hmxroot/Documents/ros/test/src/advanced/include/**"
+            ],
+            "name": "ROS",
+            "intelliSenseMode": "gcc-x64",
+            "compilerPath": "/usr/bin/g++",
+            "cStandard": "gnu11",
+            "cppStandard": "c++17"
+        }
+    ],
+    "version": 4
 }

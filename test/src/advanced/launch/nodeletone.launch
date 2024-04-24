@@ -1,0 +1,18 @@
+<launch>
+    <!-- 1,first start nodelet manager -->
+     <node pkg="nodelet" type="nodelet" name="boss_first" args="manager" output="screen" />
+
+     <node pkg="nodelet" type="nodelet" name="employ_first" args="load nodelet_tutorial_math/Plus boss_first" output="screen" >
+        <param name="nums" value="100" />
+     </node>
+
+    <node pkg="nodelet" type="nodelet" name="employ_second" args="load nodelet_tutorial_math/Plus boss_first" output="screen" >
+        <param name="nums" value="-50" />
+        <remap from="/employ_second/in" to="/employ_first/out" />
+     </node>
+     
+
+</launch>
+
+
+

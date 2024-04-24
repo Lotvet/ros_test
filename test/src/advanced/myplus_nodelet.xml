@@ -1,0 +1,5 @@
+<library path="lib/libmyplus_nodelet">
+    <class name="advanced/myplus_nodelet" type="nodelet_demo_ns::MyPlus" base_class_type="nodelet::Nodelet">
+        <description>plugin with nodelet</description>
+    </class>
+</library>

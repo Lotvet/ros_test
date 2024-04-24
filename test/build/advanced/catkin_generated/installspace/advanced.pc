@@ -1,0 +1,8 @@
+prefix=/home/hmxroot/Documents/ros/test/install
+
+Name: advanced
+Description: Description of advanced
+Version: 0.0.0
+Cflags: -I${prefix}/include
+Libs: -L${prefix}/lib 
+Requires: actionlib actionlib_msgs dynamic_reconfigure nodelet pluginlib roscpp rospy std_msgs

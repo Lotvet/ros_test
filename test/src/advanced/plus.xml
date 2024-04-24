@@ -1,0 +1,10 @@
+
+
+<library path="lib/libplugins">
+    <class type="multiangeles_plugin_ns::triangle" base_class_type="multiangeles_base_ns::multiangeles_base" >
+        <description>this is a triangle plugin.</description>
+    </class>    
+    <class type="multiangeles_plugin_ns::quadrilateral" base_class_type="multiangeles_base_ns::multiangeles_base" >
+        <description>this is a quadrilateral plugin.</description>
+    </class>
+</library>

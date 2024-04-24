@@ -2,7 +2,12 @@
     <include file="$(find gazebo_learn)/launch/gazebo_start.launch"/>
     <include file="$(find gazebo_learn)/launch/navgation_start.launch"/>
     <include file="$(find gazebo_learn)/launch/path.launch"/>
-    
+    <!-- 将深度信息转换成雷达信息 -->
+    <node pkg="depthimage_to_laserscan" type="depthimage_to_laserscan" name="depthimage_to_laserscan">
+        <remap from="image" to="/camera/depth/image_raw" />
+        <param name="output_frame_id" value="camera"  />
+    </node>
+
     <!-- <include file="$(find gazebo_learn)/launch/map_save.launch"/> -->
 
 </launch>

@@ -1,2 +1,2 @@
-apis:gazebo_learn:helloworld:metapackage:params:rosbag_learn:serverclient:talklisten:testone:tfstest:turtle_control:urdf_learn
+advanced:apis:gazebo_learn:helloworld:metapackage:params:rosbag_learn:serverclient:talklisten:testone:tfstest:turtle_control:urdf_learn
 -DCATKIN_DEVEL_PREFIX=/home/hmxroot/Documents/ros/test/devel -DCMAKE_INSTALL_PREFIX=/home/hmxroot/Documents/ros/test/install -G Unix Makefiles

@@ -5,5 +5,11 @@
     "python.analysis.extraPaths": [
         "/opt/ros/noetic/lib/python3/dist-packages"
     ],
-    "cmake.sourceDirectory": "/home/hmxroot/Documents/ros/test/src/talklisten"
+    "cmake.sourceDirectory": "/home/hmxroot/Documents/ros/test/src/talklisten",
+    "files.associations": {
+        "ratio": "cpp",
+        "string_view": "cpp",
+        "tuple": "cpp"
+    },
+    "C_Cpp.errorSquiggles": "enabled"
 }
